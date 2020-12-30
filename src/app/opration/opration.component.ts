@@ -8,20 +8,24 @@ import { Component, OnInit } from '@angular/core';
 export class OprationComponent implements OnInit {
 
   constructor() { }
+  // val: number = 0;
+  // valu: number = 0;
+  a1 = 0;
+  b1 = 0;
+  c1 = 0;
+  d1 = 0;
+  // getAll(val: number, valu: number) {
+  paresh(val, valu) {
+    this.a1 = val + valu;
+    this.b1 = val - valu;
+    this.c1 = val * valu;
+    this.d1 = val / valu;
+    // this.a1 = parseInt(val) + parseInt(valu);
+    // this.b1 = parseInt(val) - parseInt(valu);
+    // this.c1 = parseInt(val) * parseInt(valu);
+    // this.d1 = parseInt(val) / parseInt(valu);
+  }
 
-    a=0;
-      getAdd(val1,val2){
-        this.a=parseInt(val1) + parseInt(val2);
-      }
-      getSub(val1,val2){
-        this.a=parseInt(val1) - parseInt(val2);
-      }
-      getMul(val1,val2){
-        this.a=parseInt(val1) * parseInt(val2)
-      }
-      getDiv(val1,val2){
-        this.a=parseInt(val1) / parseInt(val2);
-      }
   ngOnInit(): void {
   }
 

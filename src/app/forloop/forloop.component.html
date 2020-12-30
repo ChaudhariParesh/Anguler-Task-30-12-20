@@ -1,0 +1,47 @@
+normal looping <br>
+{{arr}}
+
+<hr>
+object
+{{arrr}}
+<table class="table table-strip">
+    <tr>
+        <th>Full name</th>
+        <th>age</th>
+        <th>marks</th>
+        <th>Subject</th>
+    </tr>
+    <tr *ngFor="let a of arrr">
+        <td>
+            <table>
+                <tr>
+                    <th>First name</th>
+                    <th>Middle name</th>
+                    <th>LaST name</th>
+                </tr>
+                <tr *ngFor="let fml of a.fullname">
+                    <td>{{fml.fname}}</td>
+                    <td>{{fml.mname}}</td>
+                    <td>{{fml.lname}}</td>
+                </tr>
+            </table>
+
+        </td>
+        <td>{{a.age}}</td>
+        <td>{{a.marks}}</td>
+        <td>
+            <div *ngFor="let s of a.sub">
+                {{s.eng}},
+                {{s.mar}},
+                {{s.hin}}
+        <td>
+            <div *ngFor="let p of s.math">
+                {{p.m1}},
+                {{p.m2}},
+                {{p.m3}}
+            </div>
+        </td>
+        </div>
+        </td>
+    </tr>
+</table>
