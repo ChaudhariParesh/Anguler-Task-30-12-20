@@ -9,6 +9,8 @@ import { OprationComponent } from './opration/opration.component';
 import { FormsModule } from '@angular/forms';
 import { ForloopComponent } from './forloop/forloop.component';
 import { WithoutandcssComponent } from './withoutandcss/withoutandcss.component';
+import { PadheComponent } from './padhe/padhe.component';
+import { MultableComponent } from './multable/multable.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { WithoutandcssComponent } from './withoutandcss/withoutandcss.component'
     OprationComponent,
     ForloopComponent,
     WithoutandcssComponent,
+    PadheComponent,
+    MultableComponent,
   ],
   imports: [
     BrowserModule,

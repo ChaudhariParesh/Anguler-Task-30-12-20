@@ -14,8 +14,6 @@ export class ForloopComponent implements OnInit {
           eng: 25, hin: 55, mar: 70, math: [
             { m1: 60, m2: 40, m3: 50 }
           ]
-
-
         }
       ]
     },

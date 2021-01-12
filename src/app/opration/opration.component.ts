@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+  import { Component, OnInit } from '@angular/core';
 
-@Component({
+  @Component({
   selector: 'app-opration',
   templateUrl: './opration.component.html',
   styleUrls: ['./opration.component.css']

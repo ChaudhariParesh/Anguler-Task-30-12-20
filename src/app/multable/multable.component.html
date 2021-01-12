@@ -1,0 +1,29 @@
+<h1>DemoTable works!</h1>
+<table>
+    <tr>
+        <td>Satrt Number</td>
+        <td><input type="number" value="1" placeholder="Start Number" (keyup)="startno($event.target.value)" 
+            #box>
+        </td>
+        
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+        <td>Second Number</td>
+            <td>
+                <input type="number" value="1" placeholder="End Number" (keyup)="endno($event.target.value)" #box1>
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>
+                <button (click)="calculate()">Click Me</button>
+            </td>
+    </tr>
+</table>
+<hr>
+<table class="table">
+    <tr *ngFor="let r of row ">
+        <td *ngFor="let c of col">
+            {{r * c}}
+        </td>
+
+    </tr>
+</table>

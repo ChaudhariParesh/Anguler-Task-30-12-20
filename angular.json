@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "angulertask"
+  "defaultProject": "angulertask",
+  "cli": {
+    "analytics": "1748e766-b6ab-4ab9-b0b4-cefb53e00bec"
+  }
 }
